@@ -7,7 +7,7 @@ var upperCased = ["A", "B", "C","D", "E", "F", "G", "H", "I", "J", "K", "M", "N"
 
 
 function getPasswordChoices(){ //instructor code
-  console.log("Got to start of getPasswordChoices");
+  //console.log("Got to start of getPasswordChoices");
     var hasSpecialChars = confirm("Click ok to confirm to include special characters in your password."); //instructor code
     var hasUpperChars = confirm("Click ok to confirm to include uppercase characters in your password."); //instructor code
     var hasLowerChars = confirm("Click ok to confirm to include lowercase characters in your password."); //instructor code
@@ -36,7 +36,7 @@ function getPasswordSize(){
   var refinedPassSize = Number(passSize);
 
   if(8 <= refinedPassSize && refinedPassSize <= 128){
-    console.log("refinedPassSize: " + passSize);
+    //console.log("refinedPassSize: " + passSize);
     return refinedPassSize;
   }
   else{
@@ -48,7 +48,7 @@ function getPasswordSize(){
 
 // need function to convert password array to an easy-to-display string
 function passConvert(toBeConverted){
-  console.log("Got to start of conversion");
+  //console.log("Got to start of conversion");
   let tempString = "";
   for(var x=0; x<toBeConverted.length; x++){
     tempString = tempString + toBeConverted[x];
@@ -58,7 +58,7 @@ function passConvert(toBeConverted){
 }
 
 function generatePassword(){  //instructor code
-  console.log("Got to the start of generatePassword function");
+  //console.log("Got to the start of generatePassword function");
   var passwordOptions = getPasswordChoices(); // passwordOptions is an options Object  //instructor code
     // need function call for function that gets size of password here
   var passwordSize = getPasswordSize();
@@ -119,9 +119,9 @@ var generateBtn = document.querySelector("#generate");  //instructor code
 
 // Write password to the #password input
 function writePassword() {  //instructor code
-  console.log("Got to start of writePassword");
+  //console.log("Got to start of writePassword");
   var password = generatePassword(); // string variable //instructor code
-  console.log("Got to after generatePassword");
+  //console.log("Got to after generatePassword");
   var passwordText = document.querySelector("#password");  //instructor code
 
   passwordText.value = password;  //instructor code
