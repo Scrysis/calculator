@@ -30,17 +30,18 @@ function getPasswordChoices(){ //instructor code
     return options;  //instructor code
 } // bracket for getPasswordChoices()
 
-
+/* Function gets input from the user, then converts it into a number.  If the  */
 function getPasswordSize(){
   var passSize = prompt("Please enter a number between 8 and 128 to indicate the size of the desired password.");
   var refinedPassSize = Number(passSize);
 
-  if(8 <= refinedPassSize <= 128){
+  if(8 <= refinedPassSize && refinedPassSize <= 128){
     console.log("refinedPassSize: " + passSize);
     return refinedPassSize;
   }
   else{
     alert("You have not selected a valid number.");
+    getPasswordSize; //experimental; force user to restart the process if they don't specify a valid number of characters.
   }
 
 }
@@ -128,4 +129,4 @@ function writePassword() {  //instructor code
 } // writePassword()
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());  //instructor code
+generateBtn.addEventListener("click", writePassword);  //instructor code
