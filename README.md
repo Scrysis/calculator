@@ -11,6 +11,9 @@ based on how the student interpreted the code.
 As error-catching was not listed as a requirement, the student did not make provisions for what may happen if the user enters a letter or special character
 instead of a number for the requested number of characters.
 
+Student left commented-out console.log lines to show debugging methods (and they weren't sure if they were supposed to remove them, or if the instructors like
+seeing that kind of thing.).
+
 Function:
 
 When the page loads, there is a dotted text box and a button listed as "Generate Password".  When the Generate Password button is pressed,
